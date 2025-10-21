@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durkheim na Vida Real</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            font-family: 'Comic Sans MS', cursive;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hobby-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 10px solid #4facfe;
+        }
+        .hobby-card:hover {
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+        .question {
+            background: #e3f2fd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .question:hover {
+            background: #bbdefb;
+        }
+        .answer {
+            background: #f3e5f5;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Durkheim na Vida Real</h1>
+            <p style="font-size: 1.5rem;">Descobrindo sociologia nos nossos hobbies! 🎨🎂</p>
+        </header>
+
+        <div class="hobby-card">
+            <h2>🎂 CONFEITARIA</h2>
+            <div class="question" onclick="toggleAnswer('resp1')">
+                ➕ Quando você copia receitas prontas?
+            </div>
+            <div id="resp1" class="answer">
+                Isso se chama <strong>Solidariedade Mecânica</strong> - todo mundo fazendo igual! 👯‍♀️
+            </div>
+
+            <div class="question" onclick="toggleAnswer('resp2')">
+                ➕ Quando cria suas próprias receitas?
+            </div>
+            <div id="resp2" class="answer">
+                Isso é <strong>Solidariedade Orgânica</strong> - cada um com seu talento especial! 🌟
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <h2>🎨 DESENHO</h2>
+            <div class="question" onclick="toggleAnswer('resp3')">
+                ➕ Quando copia desenhos de outros?
+            </div>
+            <div id="resp3" class="answer">
+                <strong>Solidariedade Mecânica</strong> - seguindo os mesmos passos! 📝
+            </div>
+
+            <div class="question" onclick="toggleAnswer('resp4')">
+                ➕ Quando desenvolve seu estilo único?
+            </div>
+            <div id="resp4" class="answer">
+                <strong>Solidariedade Orgânica</strong> - contribuindo com algo especial! 🎭
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding: 20px; background: #e8f5e8; border-radius: 15px;">
+            <h3>✨ Parabéns! Você criou seu primeiro site! ✨</h3>
+            <p>Em alguns minutos ele estará na internet para todo mundo ver!</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id) {
+            var answer = document.getElementById(id);
+            if (answer.classList.contains('show')) {
+                answer.classList.remove('show');
+            } else {
+                answer.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
+☑️ Commit directly to the main branch
+
+Commit message: Criei meu site sobre Durkheim!
+
+(Deixe a descrição em branco)
